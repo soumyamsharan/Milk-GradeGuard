@@ -128,6 +128,7 @@ The problem statement in this instance centers on the requirement for a dependab
 
 ## Implementation
   - ### Methodology
+    <img src = "https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/Diagrams/WhatsApp%20Image%202024-04-07%20at%2020.34.03_6851c303.jpg" width = "500"/><br/>
     - **Data Collection**<br/>
         - Source: <br/>
 A organized milk quality dataset from Kaggle was used. The dataset ought to have multiple factors that impact the quality of milk, including pH, temperature, taste, odor, fat content, turbidity, and color.
@@ -235,7 +236,76 @@ A organized milk quality dataset from Kaggle was used. The dataset ought to have
         |    Naive Bayes    	    |           72%           	|
         | Gradient Boosting 	    |           88%           	|
         ```
+    - **Testing** <br/>
+      The Milk Grade-Guard system's output will be based on this model. To evaluate the chosen model's practicality, we 
+      test it on the input dataset from user.
+  - ### Result Analysis
+    <img src = "https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/Diagrams/op.png" width = "500"/><br/>
+    This shows the comparison of the accuracy among the models used.
+    This graph clearly concludes that Gradient Boosting(0.88) has the highest accuracy among all. Thus, this is the best 
+    fit model. <br/><br/>
+    <img src = "https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/Diagrams/input.png" width = "500"/><br/>
+    This shows the prediction of quality of milk by taking the set of input from users. Here the model is being tested over 
+    a particular set of data.<br/><br/>
+    <img src = "https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/Diagrams/graph.png" width = "500"/> <br/>
+    This Graph is used for illustrating the relationship between the actual values (y_test) and the predicted values (y_pred).<br/><br/>
+    
+## Future Scope
+As we all know , food safety is a very critical aspect of public health . It is very necessary for protecting consumers from hazards like microbiological contamination, chemicals and other toxins.
+Through this project, we contributed to the betterment of public health by creating an algorithm that can test the given sample of milk and catagorize it into good, bad, average milk. 
+This project has a very promising future scope. It can potentially revolutionize in the dairy sector and ensure high standard milk are served to consumers.<br/>
+The future developments to this project can be as follows:<br/><br/>
+a)Expansion to other dairy products: By Extending this algorithm, we can help to monitor and improve the quality of other dairy products like cheese , cottage cheese(paneer), yogurt etc.
 
+b) Real-time analysis: by implementing the real-time monitoring system using this algorithm can help to provide us with instant feedback and monitoring of dairy farms.
 
-  - ### File Structure
+c) Consumer apps: By linking the project and extending it with apps, so as to help the consumer to verify the milk they are consuming is healthy or not.
 
+d) Advanced analysis: By integrating with much more sophisticate machine learning algorithms, we can also predict the number of days the current "good" quality milk will turn into "bad" milk.
+
+These are some of the future advancements that can be done to enhance the "Milk grade-guard" project.
+This will surely help to become an integral part of dairy industry's push towards innovation and sustainability.
+
+## Author
+[Soumyam Sharan](https://github.com/soumyamsharan)
+
+## References
+[1] Habsari.W , Udin.F and Arkeman.Y “An analysis and design of fresh
+    milk smart grading system based on internet of things.” IOP Conference Series: Earth and Environmental Science. Vol. 
+    1063. No. 1. IOP Publishing, 2022.<br/><br/>
+[2] S. Kumari, M. K. Gourisaria, H. Das and D. Banik, “Deep Learning Based Approach for Milk Quality Prediction,” 2023 11th 
+    International Conference on Emerging Trends in Engineering and Technology - Signal and Information Processing (ICETET - 
+    SIP), Nagpur, India, 2023, pp. 1-6, doi: 10.1109/ICETET-SIP58143.2023.10151626. <br/><br/>
+[3] Bentejac, Candice , Cs ´ org ¨ o, Anna and Mart ˝ ´ınez-Munoz, Gonzalo. “A ˜ Comparative Analysis of XGBoost”.(2019)<br/><br/>
+[4] Septiani, Winnie, and Tatit K. Bunasor. “Intelligent System for Pasteurized Milk Quality Assessment and Prediction.” 
+    (2007).<br/><br/>
+[5] Ganesh Kumar, P., A. Alagammai, B. S. Madhumitha, and B. Ishwariya. ”IoT based milk monitoring system for the detection 
+    of milk adulteration.” ESP J Eng Technol Adv 2, no. 2 (2022): 6-9. <br/><br/>
+[6] Guo, Gongde, Hui Wang, David Bell, Yaxin Bi, and Kieran Greer. “KNN model-based approach in classification.” In On The 
+    Move to Meaningful Internet Systems 2003: CoopIS, DOA, and ODBASE: OTM Confederated International Conferences, CoopIS, 
+    DOA, and ODBASE 2003, Catania, Sicily, Italy, November 3-7, 2003. Proceedings, pp. 986-996. Springer Berlin Heidelberg, 
+    2003. <br/><br/>
+[7] Vimalajeewa, Dixon, Chamil Kulatunga, and Donagh P. Berry. “Learning in the compressed data domain: Application to milk 
+    quality prediction.” Information Sciences 459 (2018): 149-167.<br/><br/>
+[8] Mahesh, Batta. “Machine learning algorithms-a review.” International Journal of Science and Research (IJSR).[Internet] 
+    9, no. 1 (2020): 381-386.<br/><br/>
+[9] Cunha, Matheus Henrique Lopes, and Hygor Santiago Lara. “Machine learning as a way to have more accuracy when defining 
+    milk quality classification.” Caderno de ANAIS HOME (2023).<br/><br/>
+[10] Bhavsar, Drashti, Yash Jobanputra, Nirmal Keshari Swain, and Debabrata Swain. “Milk Quality Prediction Using Machine 
+     Learning.” EAI Endorsed Transactions on Internet of Things 10 (2024).<br/><br/>
+[11] Rish, Irina. “An empirical study of the naive Bayes classifier.” In IJCAI 2001 workshop on empirical methods in 
+     artificial intelligence, vol. 3, no. 22, pp. 41-46. 2001.<br/><br/>
+[12] Yang, Yongheng, and Lijuan Wei. “Application of E-nose technology combined with artificial neural network to predict 
+     total bacterial count in milk.” Journal of Dairy Science 104, no. 10 (2021): 10558-10565.<br/><br/>
+[13] Voskoboynikova, Olga, Aleksey Sukhanov, and Axel Duerkop. “Optical pH sensing in milk: A small puzzle of indicator 
+     concentrations and the best detection method.” Chemosensors 9, no. 7 (2021): 177.<br/><br/>
+[14] Kumar, JNVR Swarup, D. N. V. S. L. S. Indira, Kalyanapu Srinivas, and MN Satish Kumar. “Quality assessment and grading 
+     of milk using sensors and neural networks.” In 2022 International Conference on Electronics and Renewable Systems 
+     (ICEARS), pp. 1772-1776. IEEE, 2022.<br/><br/>
+[15] Saravanan, S., M. Kavinkumar, N. S. Kokul, N. S. Krishna, and V. I. Nitheeshkumar. “Smart milk quality analysis and 
+     grading using IoT.” In 2021 5th International Conference on Intelligent Computing and Control Systems (ICICCS), pp. 
+     378-83. IEEE, 2021.<br/><br/>
+[16] Vishwanathan, S. V. M., and M. Narasimha Murty. “SSVM: a simple SVM algorithm.” In Proceedings of the 2002 
+     International Joint Conference on Neural Networks. IJCNN’02 (Cat. No. 02CH37290), vol. 3, pp. 2393-2398. IEEE, 2002.<br/><br/>
+[17] Toko, Kiyoshi. “Research and development of taste sensors as a novel analytical tool.” Proceedings of the Japan 
+     Academy, Series B 99, no. 6 (2023): 173-189.<br/><br/>
