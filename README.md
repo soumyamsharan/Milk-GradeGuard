@@ -10,7 +10,7 @@ Enhancing food safety through machine learning
 - [About The Project](#about-the-project)
   - [Tech Stack](#tech-stack)
   - [File Structure](#file-structure)
-- [Literature Review](#literature-review)
+- [Basic Concepts](#basic-concepts)
   - [Milk grading parameters](#milk-grading-parameters)
   - [Machine Learning](#machine-learning)
   - [Classification Model](#classification-model)
@@ -37,7 +37,7 @@ from reaching customers thanks to early problem detection enabled by ML- powered
     - Milk-GradeGuard
 
 
-## Literature Review
+## Basic Concepts
 
 - ### Milk grading parameters: 
   Our machine learning approach for assessing milk quality, Milk Grade-Guard, depends on a number of factors to reliably       predict milk grade. Below is a summary of the primary parameters that will be employed:
@@ -54,3 +54,33 @@ from reaching customers thanks to early problem detection enabled by ML- powered
   indicate the presence of microorganisms or spoiling.<br/>***Turbidity:*** Clarity-impairing contaminants might alter the 
   quality of milk. Turbidity readings are used by Milk Grade-Guard into its machine learning model to help it forecast milk 
   grade more accurately.
+
+- ### Machine Learning
+  Machine learning is  a quickly emerging field of technology which enables computers to automatically learn from the          historical data. Machine learning uses various algorithms to create mathematical models and forecasts based on information 
+  or historical data. Nowadays it is being used for many different things, like image recognition, recommender systems, 
+  email filtering, and speech recognition.
+  Machine learning can be broadly classified into three types. These classification is based on the nature of the learning 
+  system and the data available. The types are as follows:
+    - Supervised learning:Labeled data is used to teach models how to predict outcomes.
+    - Unsupervised Learning: In this process, algorithms sift through unlabeled data in search of patterns or clusters.
+    - Reinforcement Learning: In this approach, models gain decision-making skills by acting in a way that maximizes a 
+      concept of cumulative reward.
+
+- ### Classification Model
+  The supervised ML are classified into 2 types namely Regression model and Classification model . The classification 
+  algorithms in machine learning are essential for categorizing data into predefined classes. Before using the model to make 
+  predictions on newly discovered data, it must first be thoroughly trained on training data and assessed on test data. Some 
+  popular classification algorithms include Logistic regression , Naive bayes classification , KNN , Decision trees, SVM .
+
+- ### KNN
+  The KNN algorithm is commonly employed as a classification algorithm, based on the premise that comparable points can be 
+  located next to one another, while it can be used for regression or classification problems as well.<br/><br/>
+
+  The distance between a query point and the other data points must be computed in order to ascertain which data points are 
+  closest to a particular query point. The decision boundaries that divide query points into various areas are formed in 
+  part by the below distance measurement formula.
+
+  Distance Euclidean (p=2): This distance metric is restricted to real-valued vectors and is the most widely used one. It 
+  measures a straight line between the query location and the other point being measured using the formula below.<br/>
+  <img src = "https://almablog-media.s3.ap-south-1.amazonaws.com/image_12_71a43363e2.png" width = "200"/>
+  
