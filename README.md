@@ -83,4 +83,41 @@ from reaching customers thanks to early problem detection enabled by ML- powered
   Distance Euclidean (p=2): This distance metric is restricted to real-valued vectors and is the most widely used one. It 
   measures a straight line between the query location and the other point being measured using the formula below.<br/>
   <img src = "https://almablog-media.s3.ap-south-1.amazonaws.com/image_12_71a43363e2.png" width = "200"/>
+
+- ### Naive Bayes
+  Naive Bayes Classifier algorithm calculates conditional probabilities. This algorithm is based on Bayes’ Theorem with the 
+  assumption of independence among input variables. It is known for high efficiency in handling large datasets. It is used 
+  widely in applications like spam filtering, text classification, and recommendation systems.<br/>
+  The formula used for calculation in Naive Bayes classifier is as follows:<br/>
+  P(C|X) = P(X|C)P(C) / P(X)<br/>
+  as the above formula assumes the input variables to be independent. We consider, P(X|C)=P(X1|C) P(X2|C)...P(Xn|C)<br/>
+  ( P(C|X) ) is the posterior probability of class ( C ) given predictor ( X ).<br/>
+  ( P(X|C) ) is the likelihood which is the probability of predictor ( X ) given class ( C ).<br/>
+  ( P(C) ) is the prior probability of class.<br/>
+  ( P(X) ) is the prior probability of predictor.<br/>
+
+- ### SVM
+  Support Vector Machine (SVM) is a supervised learning algorithm used for classification tasks. It is used split the data 
+  into 2 or more classes by creating a hyperplane. It works by finding the optimal hyperplane that maximizes the margin 
+  between different classes. In two-dimensional space, this hyperplane is a line which divides the points into two 
+  categories. In higher dimensions, it’s a plane. SVM can be linear and non-linear. For creating the decision boundary, 
+  we can different SVM kernels like linear, polynomial, RBF etc.<br/>
+  The  SVM creates a hyperplane defined by the equation:<br/>
+  w.x+b=0 <br/>
+  Where the <br/>
+  ( w ) is the weight vector. <br/>
+  ( x ) represents the input features. <br/>
+  ( b ) is the bias term. <br/> The main aim is to maximize the margin to reduce the noise and error between the classes. 
+  This can be done by, max(2/||w||) subject to y(w.+b) >= 1.
+
+- ### Gradient Boosting
+  Gradient Boosting is a machine learning technique used for both classification tasks. It builds an ensemble of decision 
+  trees, in a sequential manner where each tree tries to correct the errors made by the previous one. The method involves 
+  training trees on the residual errors of the predecessor, effectively refining the model with each iteration. Thus is 
+  very efficient in terms of classification models. <br/>
+  F2(x) = F1(x) +n. H1(x)  <br/>where <br/>
+  F2(x) is the updated model after the 1st iteration. <br/>
+  F1(x) is model at the 1st iteration. <br/>
+  n is the learning rate <br/>
+  H1(x) is the weak learner fitted on the gradient of the  loss function at 1st iteration. <br/>
   
