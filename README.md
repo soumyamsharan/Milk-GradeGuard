@@ -120,4 +120,122 @@ from reaching customers thanks to early problem detection enabled by ML- powered
   F1(x) is model at the 1st iteration. <br/>
   n is the learning rate <br/>
   H1(x) is the weak learner fitted on the gradient of the  loss function at 1st iteration. <br/>
-  
+
+## Problem Statement
+For the sake of consumer confidence and public health, milk product quality and safety must always be guaranteed. However, human examination and subjective assessment are frequently used in conventional techniques of evaluating milk quality, which leaves opportunity for error and inconsistent results. In addition, the complexity of the supply chain and the rising demand for dairy products make it difficult to uphold strict quality control standards. 
+<br/>
+The problem statement in this instance centers on the requirement for a dependable and efficient system to improve food safety in the dairy sector through the application of machine learning (ML) technologies. Creating a Milk Grade-Guard system that can reliably and effectively evaluate milk quality at every stage of production and distribution is the main problem.
+
+## Implementation
+  - ### Methodology
+    - **Data Collection**<br/>
+        - Source: <br/>
+A organized milk quality dataset from Kaggle was used. The dataset ought to have multiple factors that impact the quality of milk, including pH, temperature, taste, odor, fat content, turbidity, and color.
+
+        - Data Preprocessing: <br/>i.Duplicate Removal: To avoid skewing the training process for our machine learning 
+          models, we had remove duplicate entries from the dataset. <br/>
+          ii. Missing Value Handling: If there are few missing values, we use appropriate methods such as mean/median 
+          imputation or deletion to deal with the missing data points (null values). <br/>
+          iii. Outlier Identification and Management: We locate and address outliers, or extreme values, that may cause the 
+          underlying trends in the data to become distorted. <br/>
+          iv. Scaling: The dataset's features may be measured in several units. Normalization and standardization are 
+          scaling strategies that guarantee every feature contributes equally to the training process of the model.<br/>
+    - **Model Training, Evaluation and Selection** <br/>
+        - Model Training: <br/>
+        Our dataset was partitioned into 70:30 training and testing sets. The model is trained on the training set and 
+        evaluated on unseen data using the testing set. To prepare for classification problems, we investigate and variety 
+        of machine learning algorithms.The correlations between the milk quality characteristics and the appropriate 
+        quality grades (such as "high","medium”,“low”) found in the labeled data will be discovered using these algorithms.
+        - Evaluation of the Models: <br/>
+        To evaluate our model, we examined four algorithms: Gradient Boosting, Support Vector Machines (SVM), Naive Bayes, 
+        and K-Nearest Neighbors (KNN). We determined which technique produced the best results .Accuracy, precision, 
+        recall, and F1-score are just a few of the metrics that will be used to thoroughly assess each trained model's 
+        performance. Algorithms of the classification models used are as follow: <br/>
+
+            1) ***SVM***<br/>
+                ```markdown
+                IMPORT libraries<br/>
+
+                LOAD dataset<br/>
+                SELECT features and target<br/>
+
+                SPLIT dataset into training and testing sets<br/>
+
+                INITIALIZE SVM with RBF kernel<br/>
+                SET parameters gamma and C<br/>
+                FIT SVM on training data<br/>
+
+                PREDICT using SVM on test data<br/>
+
+                CALCULATE accuracy and F1 score<br/>
+                PRINT performance metrics <br/>
+                ```
+            2) ***NAIVE BAYES***<br/>
+                ```markdown
+                IMPORT libraries<br/>
+                SUPPRESS warnings<br/>
+    
+                STANDARDIZE features<br/>
+    
+                SPLIT dataset into training and testing sets<br/>
+                PRINT shapes of the splits<br/>
+    
+                INITIALIZE Gaussian Naive Bayes classifier<br/>
+                FIT classifier on training data<br/>
+
+                PREDICT on test data<br/>
+                CALCULATE accuracy<br/>
+    
+                PRINT accuracy and classification report<br/>
+
+                ```
+            3) ***KNN***<br/>
+                ```markdown
+                IMPORT libraries<br/>
+                
+                LOAD dataset<br/>
+                SELECT features and target<br/>
+                
+                SPLIT dataset into training and testing sets<br/>
+                
+                INITIALIZE KNN classifier with specified number of neighbors<br/>
+                FIT KNN on training data<br/>
+                
+                PREDICT using KNN on test data<br/>
+
+                CALCULATE confusion matrix and classification report<br/>
+                PRINT evaluation metrics<br/>
+                ```
+            4) ***GRADIENT BOOSTING***<br/> 
+                ```markdown
+                IMPORT libraries<br/> 
+                
+                LOAD dataset<br/> 
+                SELECT features and target<br/> 
+                
+                SPLIT dataset into training and testing sets<br/> 
+                PRINT sizes of the splits<br/> 
+                
+                INITIALIZE Gradient Boosting Classifier<br/> 
+                FIT classifier on training data<br/> 
+                
+                PREDICT on test data<br/> 
+                
+                PRINT classification report<br/>
+                ```
+        - Model Selection: <br/>
+        We choose the Gradient Boosting model as it performs best in terms of accuracy and dependability when it comes to 
+        determining milk quality based on the evaluation findings. The Milk Grade-Guard system's output will be based on 
+        this model. The accuracy of all the models are as follows: <br/>
+        ```markdown
+        |     Algorithms  	    |    Accuracy Percentage   	|
+        |---------------------------|---------------------------|
+        |        KNN        	    |           68%           	|
+        |        SVM        	    |          55.56%         	|
+        |    Naive Bayes    	    |           72%           	|
+        | Gradient Boosting 	    |           88%           	|
+        ```
+
+
+  - ### File Structure
+
