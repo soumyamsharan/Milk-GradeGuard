@@ -21,5 +21,5 @@ Enhancing food safety through machine learning
   - [Gradient Boosting](https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/README.md#gradient-boosting)
 
 
-##About The Project
+## About The Project
 iwdhgwidghwidgiwd
