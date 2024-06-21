@@ -8,7 +8,7 @@ Enhancing food safety through machine learning
 
 ## Table of Contents
 
-- [About the Project](https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/README.md#about-the-project)
+- [About the Project](#about-the-project)
   - [Tech Stack](https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/README.md#tech-stack)
   - [File Structure](https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/README.md#file-structure)
 - [Literature Review](https://github.com/soumyamsharan/Milk-GradeGuard/blob/main/README.md#literature-review)
